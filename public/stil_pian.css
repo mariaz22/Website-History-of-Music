@@ -1,0 +1,117 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+    background-image: url('poza_fundal_pian.jpeg');
+    background-size: cover;
+}
+
+#welcomeMessage {
+    display: none;
+    position: fixed;
+    top: 20px; /* Ajustează distanța de la partea de sus a paginii */
+    right: 20px; /* Ajustează distanța de la marginea din dreapta a paginii */
+    padding: 30px;
+    font-family: 'Dancing Script', cursive ;
+    background-color: transparent; /* Fundal complet transparent */
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Dancing Script', cursive ;
+    background-image: linear-gradient(to right, #0e0303, #a98666);
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Dancing Script', cursive ;
+    background-image: linear-gradient(to right, #220f0f, #b49478);
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1); 
+}
+
+main {
+    margin: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    background-image: linear-gradient(to right, #0e0303, #a98666);
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Dancing Script', cursive ;
+}
+
+ #sheetMusicButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #5b3431;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#sheetMusicButton:hover {
+    background-color: #555;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+} 

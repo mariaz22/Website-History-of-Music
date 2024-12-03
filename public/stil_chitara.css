@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    background-image: url('fundal_chitara3.jpeg');
+    background-size: cover;
+}
+
+#welcomeMessage {
+    display: none;
+    position: fixed;
+    top: 20px; /* Ajustează distanța de la partea de sus a paginii */
+    right: 20px; /* Ajustează distanța de la marginea din dreapta a paginii */
+    padding: 30px;
+    font-family: 'Dancing Script', cursive ;
+    background-color: transparent; /* Fundal complet transparent */
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Dancing Script', cursive ;
+    background-image: linear-gradient(to right, #1f0b04, #a98666);
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    background-image: linear-gradient(to right, #2f0e02, #caa98a);
+    font-family: 'Dancing Script', cursive ;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+main {
+    margin: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+.sidebar-images {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end; 
+    margin-top: auto; 
+    padding-bottom: 20px;
+}
+
+.image-container {
+    position: relative;
+    margin-right: 10px;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    text-align: center;
+    padding: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .image-text {
+    opacity: 1;
+}
+
+.sidebar-images img {
+    width: 200px; 
+    height: auto;
+    margin: 0 10px; 
+    transition: width 0.3s ease, margin 0.5s ease;
+}
+
+.sidebar-images img:hover {
+    width: 220px; 
+    margin-left: 5px; 
+}
+
+.sidebar-images img:hover + img {
+    margin-left: 15px; 
+}
+
+footer {
+    text-align: center;
+    background-image: linear-gradient(to right, #1f0b04, #a98666);
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto; 
+    position: absolute;
+    bottom: 0;
+    font-family: 'Dancing Script', cursive ;
+}

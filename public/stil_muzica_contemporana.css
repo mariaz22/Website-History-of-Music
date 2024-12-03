@@ -1,0 +1,275 @@
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('fundal_contemp.jpeg');
+    color: #0f0e0e;
+
+}
+
+header {
+    background-image: linear-gradient(to right, #270426, #d832db);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Dancing Script', cursive ;
+}
+
+.image figcaption {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #f9f6f6;
+    font-family: 'Dancing Script', cursive ;
+    text-align: center; /* Centrare text */
+/*}
+
+/*nav ul {
+    list-style: none;
+    text-align: center;
+    background-image: linear-gradient(to right, #50094d, #f157f4);
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+    font-family: 'Dancing Script', cursive ;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #eba2a2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0); 
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: calc(30% - 20px);
+    margin: 10px;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.image:hover img {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    background-image: linear-gradient(to right, #270426, #d832db);
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Dancing Script', cursive ;
+}*/
+
+/* CSS pentru pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('fundal_contemp.jpeg');
+    color: #0f0e0e;
+}
+
+header {
+    background-image: linear-gradient(to right, #270426, #d832db);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Dancing Script', cursive ;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    background-image: linear-gradient(to right, #50094d, #f157f4);
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+    font-family: 'Dancing Script', cursive ;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #eba2a2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0); 
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: calc(30% - 20px);
+    margin: 10px;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.image:hover img {
+    transform: scale(1.1);
+}
+
+.image figcaption {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #f9f6f6;
+    font-family: 'Dancing Script', cursive ;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-image: linear-gradient(to right, #270426, #d832db);
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Dancing Script', cursive ;
+}
+
+
+#artistInfo img {
+    display: flex;
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#leftText {
+    text-align: left; 
+}
+
+#rightText {
+    text-align: left; 
+}
+
+#artistInfo {
+    display: flex;
+    align-items: flex-start;
+    color: #f5eaea;
+}
+
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
+

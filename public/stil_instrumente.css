@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* @media screen and (max-width: 768px) {
+    .body {
+      font-size: 14px;
+      display: none;
+    }
+  } */
+
+  @media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        font-size: 1em;
+        background-color: rgba(134, 129, 129, 0.8);
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .column {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        font-size: 1.2em;
+        background-color: rgba(134, 129, 129, 0.9);
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .column {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        font-size: 1.5em;
+        background-color: rgba(134, 129, 129, 1);
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .column {
+        font-size: 20px;
+    }
+}
+
+  #welcomeMessage {
+    display: none;
+    position: fixed;
+    top: 20px; 
+    right: 20px; 
+    padding: 30px;
+    font-family: 'Dancing Script', cursive ;
+    background-color: transparent; 
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFDD0;
+    background-image: linear-gradient(to right, #10100f, #a98666);
+    background-image: url('poza_fundal.jpg.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+header {
+    color: #fff;
+    padding: 20px;
+    font-family: 'Dancing Script', cursive ;
+    background-image: linear-gradient(to right, #10100f, #a98666);
+    background-color: rgba(134, 129, 129, 0.9);
+    font-size: 1.2em;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul ul { 
+    display: none;
+    position: absolute;
+    background-image: linear-gradient(to right, #10100f, #a98666);
+}
+
+nav ul ul li {
+    display: block;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav a:hover {
+    background-image: linear-gradient(to right, #353532, #a98666);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+@keyframes animatie {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+        width: 200px;
+    }
+    50% {
+        transform: translateX(50px); 
+        opacity: 0.5;
+        width: 300px; 
+    }
+    100% {
+        transform: translateX(0); 
+        opacity: 1; 
+        width: 200px; 
+    }
+}
+
+
+.column {
+    flex: 1 1 300px;
+    background-color: rgba(255, 255, 255, 0.37);
+    font-size: 20px;
+    color:black;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    animation: animatie 4s infinite;
+    margin-top: 200px;
+
+}
+
+
+
+footer {
+    background-image: linear-gradient(to right, #10100f, #a98666);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Dancing Script', cursive ;
+}
+

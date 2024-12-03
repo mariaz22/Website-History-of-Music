@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes|Dancing+Script">
+    <title>Partituri pentru Cântece la Pian</title>
+    <link rel="stylesheet" href="stil_partituri.css">
+</head>
+<body>
+    <header>
+        <h1>Partituri pentru Cântece la Pian</h1>
+    </header>
+    <main>
+        <div class="animated-text">
+            <span class="text">Comandați o partitură</span>
+        </div>
+        <form id="sheetMusicForm">
+            <label for="songSelect">Selectați un cântec:</label>
+            <select id="songSelect">
+                <option value="Fur Elise">Fur Elise</option>
+                <option value="River Flows in You">River Flows in You</option>
+                <option value="Moonlight Sonata">Moonlight Sonata</option>
+                <option value="Prelude in C# Minor">Prelude in C# Minor</option>
+            </select>
+            <label for="emailInput">Introduceți adresa de email:</label>
+            <input type="email" id="emailInput" required>
+            <button type="submit">Trimite</button>
+        </form>
+        <div id="message"></div>
+    </main>
+    <script src="partituri.js"></script>
+    <a href="pian.html">Înapoi la Pagina Principală</a>
+    <footer>
+        <p>&copy; 2024 Istoria Muzicii. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+</html>

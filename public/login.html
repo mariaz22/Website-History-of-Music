@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autentificare</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: rgb(234, 175, 185)
+        }
+        form {
+            display: inline-block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Autentificare</h2>
+    <form action="/login" method="post">
+        <label for="username">Utilizator:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Parolă:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">Autentificare</button>
+    </form>
+</body>
+</html>

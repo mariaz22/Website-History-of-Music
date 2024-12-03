@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('sec20_2.jpg');
+    background-size: cover;
+}
+
+header {
+    background-image: linear-gradient(to right, #482c2c, #eee0df);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Dancing Script', cursive ;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    background-image: linear-gradient(to right, #2e1d1d, #e9bdba);
+    padding: 10px 0;
+    font-family: 'Dancing Script', cursive ;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #111111;
+}
+
+p {
+    color: #000000;
+    line-height: 1.6;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #eba2a2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: calc(50% - 40px);
+    margin: 20px;
+    float: left;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: -100%; 
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    transition: bottom 0.5s ease;
+}
+
+.image-container:hover .image-overlay {
+    bottom: 0;
+}
+
+button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #df6ab4;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    z-index: 9999; 
+}
+
+footer {
+    text-align: center;
+    background-image: linear-gradient(to right, #2e1d1d, #e9bdba);
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Dancing Script', cursive ;
+}
+

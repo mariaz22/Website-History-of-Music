@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    /*background-color: #333;*/
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Dancing Script', cursive ;
+    background-image: linear-gradient(to right, #0e0303, #a98666);
+}
+
+main {
+    margin: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+#error,
+#success {
+    margin-top: 10px;
+}
+
+/* Stilizare pentru formular */
+form {
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Adăugare culoare de fundal */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adăugare umbra pentru efect de adâncime */
+}
+
+/* Stilizare pentru etichetele formularului */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Stilizare pentru câmpurile de input */
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s; /* Adăugare tranziție pentru culoarea chenarului la hover */
+}
+
+input[type="email"]:focus,
+select:focus {
+    border-color: #555; /* Schimbare culoare chenar la focus */
+}
+
+/* Stilizare pentru butonul de trimitere a formularului */
+button[type="submit"] {
+    background-color: #194d24;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 14px 28px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Adăugare tranziție pentru culoarea de fundal și pentru transformare la hover */
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+    transform: scale(1.05); /* Mărire ușoară la hover */
+}
+
+/* Stilizare pentru mesaje de eroare și de succes */
+#error,
+#success {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#error {
+    background-color: #ffcccc;
+}
+
+#success {
+    background-color: #ccffcc;
+}
+
+#message.success {
+    background-color: green;
+    color: white;
+}
+
+#message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#error {
+    background-color: #ffcccc;
+    color: red; /* Adăugare culoare text pentru mesajul de eroare */
+}
+
+.animated-text {
+    text-align: center;
+    margin-top: 50px; /* Ajustează distanța deasupra formularului */
+}
+
+.text {
+    display: inline-block;
+    font-size: 30px; /* Ajustează dimensiunea textului */
+    font-family: 'Great Vibes', cursive; /* Folosește fontul specificat */
+    animation: moveText 7s linear infinite; /* Animarea textului */
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.confirmation {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ccffcc;
+    font-size: 0.9em; /* Dimensiune mai mică pentru mesajul de confirmare */
+    color: green;
+}
