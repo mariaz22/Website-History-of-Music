@@ -1,1 +1,1 @@
-# Proiect1
+This website is a dynamic and interactive platform that explores the rich history of music and musical instruments. Built with HTML, CSS, JavaScript, and Node.js, it provides a visually appealing and user-friendly experience for music enthusiasts of all ages.
